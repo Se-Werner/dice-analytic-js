@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SW Dice Analytic</title>
+        <link rel="stylesheet" href="dice-styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>SW Dice Analytic</h1>
+        </div>
+
+        <div class="main">
+            <div class="side-container">
+                <div class="input-top">
+                    <script src="dice-analytic.js"></script>
+                    <input type="number" id="inputNum" placeholder="1" value="1">
+                    <select name="" id="inputDice">
+                        <option value="4">d4</option>
+                        <option value="6">d6</option>
+                        <option value="8">d8</option>
+                        <option value="10">d10</option>
+                        <option value="12">d12</option>
+                        <option value="20">d20</option>
+                    </select>
+                    +
+                    <input type="number" id="inputMod" placeholder="0">
+                </div>
+                <div class="input-bottom">
+                    <button onclick="buttonTest()">Click for test</button>
+                </div>
+            </div>
+
+            <div class="middle-container">
+                <div id="topOutput"></div>
+                <div id="bottomOutput"></div>
+            </div>
+
+            <div class="side-container"></div>
+        </div>
+    </body>
+</html>
